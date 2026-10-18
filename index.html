@@ -1,44 +1,43 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Keenian Knott | IT Help Desk & Support</title>
-<meta name="description" content="Keenian Knott – entry-level IT Help Desk & Support, CompTIA Security+ certified, Baltimore, MD.">
+<meta name="description" content="Keenian Knott – CompTIA Security+ certified, entry-level IT help desk and support candidate in Baltimore, MD. Home labs in Active Directory, Entra ID, and help desk ticketing.">
 <link rel="stylesheet" href="style.css"></head><body>
 <header><img class="avatar" src="photo.png" alt="Keenian Knott"><h1>Keenian Knott</h1><p class="tag">IT Help Desk &amp; Support | CompTIA Security+</p>
 <p class="contact-line">Baltimore, MD · <a href="tel:+12409234127">(240) 923-4127</a> · <a href="mailto:keenianknott91@gmail.com">keenianknott91@gmail.com</a> · <a href="https://www.linkedin.com/in/keenianknott">LinkedIn</a> · <a href="https://github.com/keenianknott91-ops">GitHub</a></p>
 <a class="btn" href="resume.pdf" download>Download Resume</a></header>
 <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#labs">Home Labs</a><a href="#experience">Experience</a><a href="#certs">Certifications</a><a href="#contact">Contact</a></nav>
 <main>
-<section id="about"><h2>About</h2><div class="card"><p>CompTIA Security+ certified IT support specialist seeking an entry-level help desk role, with hands-on Active Directory, Entra ID, and Microsoft 365 skills from an ongoing home lab series. About two and a half years in customer-facing roles explaining technical problems in plain language. I document my lab work as public runbooks on GitHub.</p></div></section>
+<section id="about"><h2>About</h2><div class="card"><p>Security+ certified, entry-level IT support candidate seeking a help desk or desktop support role. I build hands-on practice in Active Directory, Microsoft Entra ID, and help desk ticketing through home labs and help desk simulator tickets, and I publish write-ups of my finished labs on GitHub. More than two years in customer-facing jobs (retail, loss prevention, and electrical work) taught me to stay calm and explain problems in plain language. CompTIA A+ in progress.</p></div></section>
 <section id="skills"><h2>Skills</h2><div class="grid">
 <div class="card"><h3>Directory &amp; Identity</h3><div class="chips"><span>Active Directory</span><span>Microsoft Entra ID</span><span>Group Policy</span><span>User provisioning</span><span>Password resets</span><span>MFA</span><span>Onboarding/offboarding</span></div></div>
 <div class="card"><h3>Systems &amp; Cloud</h3><div class="chips"><span>Windows 10/11</span><span>Windows Server (lab)</span><span>Microsoft 365 admin center</span><span>License assignment</span><span>PowerShell</span></div></div>
 <div class="card"><h3>Support &amp; Networking</h3><div class="chips"><span>osTicket</span><span>RDP</span><span>Ticket triage &amp; escalation</span><span>SLA adherence</span><span>TCP/IP</span><span>DNS</span><span>DHCP</span><span>VPN</span></div></div>
 </div></section>
 <section id="labs"><h2>Home Labs &amp; Projects</h2><div class="grid">
-<div class="card"><h3>ServiceDesk Simulator: VPN Disconnect Ticket</h3><p class="meta">10/2026 · Remote Desktop, admin terminal, VPN client</p><ul>
+<div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/helpdesk-labs/main/servicedesk-simulator/vpn-disconnect-ticket/screenshots/03-remote-desktop.png" alt="Remote Desktop session to the user's PC in ServiceDesk Simulator" loading="lazy"><h3>ServiceDesk Simulator: VPN Disconnect Ticket</h3><p class="meta">10/2026 · Remote Desktop, admin terminal, VPN client</p><ul>
 <li>Resolved a HIGH-priority ticket for a remote Marketing user who lost VPN and all internal access.</li>
 <li>Connected to the user's PC through Remote Desktop and ran <code>ipconfig /flushdns</code> to clear stale DNS.</li>
 <li>Reconnected the VPN client and confirmed the fix with the user over chat before closing the ticket.</li></ul>
 <a class="link" href="https://github.com/keenianknott91-ops/helpdesk-labs/tree/main/servicedesk-simulator/vpn-disconnect-ticket">View write-up on GitHub →</a></div>
-<div class="card"><h3>ServiceDesk Simulator: New Hire Account Setup</h3><p class="meta">10/2026 · Active Directory, security groups, onboarding</p><ul>
+<div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/helpdesk-labs/main/servicedesk-simulator/new-hire-account-setup/screenshots/04-security-groups.png" alt="Security groups assigned to the new hire account" loading="lazy"><h3>ServiceDesk Simulator: New Hire Account Setup</h3><p class="meta">10/2026 · Active Directory, security groups, onboarding</p><ul>
 <li>Completed a new-hire onboarding ticket with an HR deadline of 9 AM on the start date.</li>
 <li>Checked the directory for an existing account, then created the AD user with name, email, department, and title.</li>
 <li>Granted role-based access through the Engineering, VPN-Users, and CodeRepo-Access security groups.</li></ul>
 <a class="link" href="https://github.com/keenianknott91-ops/helpdesk-labs/tree/main/servicedesk-simulator/new-hire-account-setup">View write-up on GitHub →</a></div>
-<div class="card"><h3>Microsoft Entra ID Help Desk Lab</h3><p class="meta">09/2026 – Present · Entra ID tenant + Windows Server VM</p><ul>
-<li>Entra ID tenant simulating an 11-user company with security, Microsoft 365, and dynamic groups.</li>
-<li>User lifecycle (joiners, movers, leavers): provisioning, bulk CSV imports, transfers, offboarding with session revocation.</li>
-<li>Admin and self-service password resets, MFA enrollment, sign-in and lockout troubleshooting.</li>
-<li>Simulated tickets worked end to end, with published runbooks.</li></ul>
-<a class="link" href="https://github.com/keenianknott91-ops/entra-ad-lab-series">View runbooks on GitHub →</a></div>
-<div class="card"><h3>Active Directory &amp; PowerShell Lab</h3><p class="meta">08/2026 – Present · VMware, Windows 11, AD domain</p><ul>
+<div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/entra-ad-lab-series/main/lab-02-users-and-groups/screenshots/ticket-2043-termination.png" alt="Entra ID user profile with sign-in blocked during an offboarding ticket" loading="lazy"><h3>Microsoft Entra ID Help Desk Lab</h3><p class="meta">09/2026 – Present · Microsoft Entra ID (Microsoft 365 Business Premium trial)</p><ul>
+<li>Built a directory for a fictional company with users created by hand and by bulk CSV upload.</li>
+<li>Created security, Microsoft 365, nested, and dynamic groups (dynamic membership by department).</li>
+<li>Worked four simulated tickets: new hire setup, name change (escalated to Tier 2), termination with blocked sign-in and session revocation, and a department transfer.</li>
+<li>Next up: password resets (SSPR and admin resets) and MFA registration.</li></ul>
+<a class="link" href="https://github.com/keenianknott91-ops/entra-ad-lab-series">View lab write-ups on GitHub →</a></div>
+<div class="card"><h3>Active Directory &amp; PowerShell Lab</h3><p class="meta">08/2026 – Present (in progress) · Virtualized Windows 11 + AD domain</p><ul>
 <li>Virtualized Windows 11 and Active Directory domain environment.</li>
-<li>Create, modify, and disable accounts; password resets, group membership, permissions, Group Policy.</li>
-<li>PowerShell account-administration exercises documented publicly.</li></ul>
-<a class="link" href="https://github.com/keenianknott91-ops/powershell-labs-">View on GitHub →</a></div>
-<div class="card"><h3>osTicket Help Desk &amp; Vulnerability Assessment Lab</h3><p class="meta">06/2024 – 07/2024 · osTicket, Docker</p><ul>
-<li>Deployed osTicket with agent roles, departments, SLA settings, and ticket queues.</li>
-<li>Processed 25+ simulated tickets through intake, prioritization, resolution, escalation, and closure.</li>
-<li>Vulnerability assessment across a simulated network, identifying assets and business impact.</li></ul>
+<li>Practicing account administration: create, modify, and disable accounts; password resets; group membership and permissions.</li>
+<li>In progress: PowerShell account-administration exercises and Group Policy. Write-ups coming soon.</li></ul></div>
+<div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/osticket-helpdesk-lab/main/screenshots/ticket-564213-phishing-email.png" alt="osTicket ticket #564213, closed after review of a possible phishing email" loading="lazy"><h3>osTicket Help Desk Lab</h3><p class="meta">08/2026 · osTicket, Docker Compose, MySQL</p><ul>
+<li>Deployed osTicket with a MySQL database using Docker and Docker Compose.</li>
+<li>Configured the ticketing system and worked tickets through creation, assignment, prioritization, status updates, resolution, and closure.</li>
+<li>Documented an example ticket (a possible phishing email) and fixed setup errors along the way.</li></ul>
 <a class="link" href="https://github.com/keenianknott91-ops/osticket-helpdesk-lab">View on GitHub →</a></div>
 </div></section>
 <section id="experience"><h2>Experience</h2>
