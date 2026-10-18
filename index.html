@@ -5,7 +5,7 @@
 <header><img class="avatar" src="photo.png" alt="Keenian Knott"><h1>Keenian Knott</h1><p class="tag">IT Help Desk &amp; Support | CompTIA Security+</p>
 <p class="contact-line">Baltimore, MD · <a href="tel:+12409234127">(240) 923-4127</a> · <a href="mailto:keenianknott91@gmail.com">keenianknott91@gmail.com</a> · <a href="https://www.linkedin.com/in/keenianknott">LinkedIn</a> · <a href="https://github.com/keenianknott91-ops">GitHub</a></p>
 <a class="btn" href="resume.pdf" download>Download Resume</a></header>
-<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#labs">Home Labs</a><a href="#experience">Experience</a><a href="#certs">Certifications</a><a href="#contact">Contact</a></nav>
+<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#labs">Help Desk Projects</a><a href="#experience">Experience</a><a href="#certs">Certifications</a><a href="#contact">Contact</a></nav>
 <main>
 <section id="about"><h2>About</h2><div class="card"><p>Security+ certified, entry-level IT support candidate seeking a help desk or desktop support role. I build hands-on practice in Active Directory, Microsoft Entra ID, and help desk ticketing through home labs and help desk simulator tickets, and I publish write-ups of my finished labs on GitHub. More than two years in customer-facing jobs (retail, loss prevention, and electrical work) taught me to stay calm and explain problems in plain language. CompTIA A+ in progress.</p></div></section>
 <section id="skills"><h2>Skills</h2><div class="grid">
@@ -13,33 +13,29 @@
 <div class="card"><h3>Systems &amp; Cloud</h3><div class="chips"><span>Windows 10/11</span><span>Windows Server (lab)</span><span>Microsoft 365 admin center</span><span>License assignment</span><span>PowerShell</span></div></div>
 <div class="card"><h3>Support &amp; Networking</h3><div class="chips"><span>osTicket</span><span>RDP</span><span>Ticket triage &amp; escalation</span><span>SLA adherence</span><span>TCP/IP</span><span>DNS</span><span>DHCP</span><span>VPN</span></div></div>
 </div></section>
-<section id="labs"><h2>Home Labs &amp; Projects</h2><div class="grid">
-<div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/helpdesk-labs/main/servicedesk-simulator/vpn-disconnect-ticket/screenshots/03-remote-desktop.png" alt="Remote Desktop session to the user's PC in ServiceDesk Simulator" loading="lazy"><h3>ServiceDesk Simulator: VPN Disconnect Ticket</h3><p class="meta">10/2026 · Remote Desktop, admin terminal, VPN client</p><ul>
-<li>Resolved a HIGH-priority ticket for a remote Marketing user who lost VPN and all internal access.</li>
-<li>Connected to the user's PC through Remote Desktop and ran <code>ipconfig /flushdns</code> to clear stale DNS.</li>
-<li>Reconnected the VPN client and confirmed the fix with the user over chat before closing the ticket.</li></ul>
-<a class="link" href="https://github.com/keenianknott91-ops/helpdesk-labs/tree/main/servicedesk-simulator/vpn-disconnect-ticket">View write-up on GitHub →</a></div>
-<div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/helpdesk-labs/main/servicedesk-simulator/new-hire-account-setup/screenshots/04-security-groups.png" alt="Security groups assigned to the new hire account" loading="lazy"><h3>ServiceDesk Simulator: New Hire Account Setup</h3><p class="meta">10/2026 · Active Directory, security groups, onboarding</p><ul>
-<li>Completed a new-hire onboarding ticket with an HR deadline of 9 AM on the start date.</li>
-<li>Checked the directory for an existing account, then created the AD user with name, email, department, and title.</li>
-<li>Granted role-based access through the Engineering, VPN-Users, and CodeRepo-Access security groups.</li></ul>
-<a class="link" href="https://github.com/keenianknott91-ops/helpdesk-labs/tree/main/servicedesk-simulator/new-hire-account-setup">View write-up on GitHub →</a></div>
-<div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/entra-ad-lab-series/main/lab-02-users-and-groups/screenshots/ticket-2043-termination.png" alt="Entra ID user profile with sign-in blocked during an offboarding ticket" loading="lazy"><h3>Microsoft Entra ID Help Desk Lab</h3><p class="meta">09/2026 – Present · Microsoft Entra ID (Microsoft 365 Business Premium trial)</p><ul>
-<li>Built a directory for a fictional company with users created by hand and by bulk CSV upload.</li>
-<li>Created security, Microsoft 365, nested, and dynamic groups (dynamic membership by department).</li>
-<li>Worked four simulated tickets: new hire setup, name change (escalated to Tier 2), termination with blocked sign-in and session revocation, and a department transfer.</li>
-<li>Next up: password resets (SSPR and admin resets) and MFA registration.</li></ul>
-<a class="link" href="https://github.com/keenianknott91-ops/entra-ad-lab-series">View lab write-ups on GitHub →</a></div>
-<div class="card"><h3>Active Directory &amp; PowerShell Lab</h3><p class="meta">08/2026 – Present (in progress) · Virtualized Windows 11 + AD domain</p><ul>
-<li>Virtualized Windows 11 and Active Directory domain environment.</li>
-<li>Practicing account administration: create, modify, and disable accounts; password resets; group membership and permissions.</li>
-<li>In progress: PowerShell account-administration exercises and Group Policy. Write-ups coming soon.</li></ul></div>
+<section id="labs"><h2>Help Desk Projects</h2><div class="grid">
+<div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/helpdesk-labs/main/servicedesk-simulator/vpn-disconnect-ticket/screenshots/03-remote-desktop.png" alt="Remote Desktop session to the user's PC in ServiceDesk Simulator" loading="lazy"><h3>ServiceDesk Simulator Tickets</h3><p class="meta">ServiceDesk Simulator · Remote Desktop, Active Directory, network devices</p>
+<ul class="labs">
+<li><a href="https://github.com/keenianknott91-ops/helpdesk-labs/tree/main/servicedesk-simulator/vpn-disconnect-ticket">VPN disconnected and won't reconnect</a><span>HIGH priority: connected to the remote user's PC over Remote Desktop, ran <code>ipconfig /flushdns</code>, reconnected the VPN client, and confirmed the fix with the user.</span></li>
+<li><a href="https://github.com/keenianknott91-ops/helpdesk-labs/tree/main/servicedesk-simulator/new-hire-account-setup">New hire account setup</a><span>Checked for an existing account, created the AD user, and granted role-based access through security groups before the HR start-date deadline.</span></li>
+<li><a href="https://github.com/keenianknott91-ops/helpdesk-labs/tree/main/servicedesk-simulator/floor3-network-outage">Nobody on the 3rd floor has internet</a><span>CRITICAL: scoped a floor-wide outage, checked the router, firewall, and floor switches in the server room, isolated and restarted the Floor 3 switch, then verified and closed the ticket.</span></li>
+</ul>
+<a class="link" href="https://github.com/keenianknott91-ops/helpdesk-labs">View all tickets on GitHub →</a></div>
+<div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/entra-ad-lab-series/main/lab-02-users-and-groups/screenshots/ticket-2043-termination.png" alt="Entra ID user profile with sign-in blocked during an offboarding ticket" loading="lazy"><h3>Microsoft Entra ID Lab Series</h3><p class="meta">09/2026 – Present · Microsoft Entra ID (Microsoft 365 Business Premium trial)</p>
+<ul class="labs">
+<li><a href="https://github.com/keenianknott91-ops/entra-ad-lab-series/tree/main/lab-02-users-and-groups">Lab 02: Users &amp; Groups</a><span>Built a directory for a fictional company with users created by hand and by bulk CSV upload, plus security, Microsoft 365, nested, and dynamic groups (dynamic membership by department).</span></li>
+<li><a href="https://github.com/keenianknott91-ops/entra-ad-lab-series/tree/main/lab-02-users-and-groups">Lab 02 tickets</a><span>Worked four simulated tickets: new hire setup, name change (escalated to Tier 2), termination with blocked sign-in and session revocation, and a department transfer.</span></li>
+<li class="next"><strong>Next up:</strong> password resets (SSPR and admin resets) and MFA registration.</li>
+</ul>
+<a class="link" href="https://github.com/keenianknott91-ops/entra-ad-lab-series">View lab series on GitHub →</a></div>
 <div class="card"><img class="thumb" src="https://raw.githubusercontent.com/keenianknott91-ops/osticket-helpdesk-lab/main/screenshots/ticket-564213-phishing-email.png" alt="osTicket ticket #564213, closed after review of a possible phishing email" loading="lazy"><h3>osTicket Help Desk Lab</h3><p class="meta">08/2026 · osTicket, Docker Compose, MySQL</p><ul>
 <li>Deployed osTicket with a MySQL database using Docker and Docker Compose.</li>
 <li>Configured the ticketing system and worked tickets through creation, assignment, prioritization, status updates, resolution, and closure.</li>
 <li>Documented an example ticket (a possible phishing email) and fixed setup errors along the way.</li></ul>
 <a class="link" href="https://github.com/keenianknott91-ops/osticket-helpdesk-lab">View on GitHub →</a></div>
-</div></section>
+</div>
+<div class="card next-card"><h3>Active Directory &amp; PowerShell Lab <span class="badge">In progress</span></h3><p class="meta">08/2026 – Present · Virtualized Windows 11 + AD domain</p><p>Practicing account administration in a virtualized Windows 11 and Active Directory domain: create, modify, and disable accounts; group membership and permissions. Next up: PowerShell account-administration exercises and Group Policy. Write-ups coming soon.</p></div>
+</section>
 <section id="experience"><h2>Experience</h2>
 <div class="card job"><h3>Retail Associate — Marshalls</h3><p class="meta">Baltimore, MD · 03/2026 – Present</p><ul><li>Resolve customer concerns calmly in a fast-paced environment.</li><li>Clear communication, problem-solving, and attention to detail.</li></ul></div>
 <div class="card job"><h3>Apprentice Electrician — Crown Electrician</h3><p class="meta">Baltimore, MD · 07/2024 – 05/2025</p><ul><li>Diagnosed and resolved electrical faults using root-cause troubleshooting.</li><li>Documented repairs and explained technical problems to clients in plain language.</li></ul></div>
